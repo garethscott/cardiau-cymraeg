@@ -62,6 +62,12 @@ Data-lookup helpers live in `src/utils/courseData.ts` (`getCourseById`,
 route params into domain objects. Any lookup miss renders the Not Found state
 rather than throwing.
 
+Section `type` (the `:contentType` param) is `"words" | "units"` and drives
+behaviour; section `title` is free-form display text (`"Geiriau"`, `"Unedau"`).
+`Flashcard` is a discriminated union: `PhraseFlashcard` (`english`/`welsh` both
+`string`) or `WordFlashcard` (both `WordForms` `{ singular, plural }`, shown as
+`dog / dogs` → `ci / cŵn`). Narrow with `typeof card.welsh === 'string'`.
+
 Flashcard behaviour: only local `useState` (`currentCardIndex`, `isRevealed`).
 The whole card is the click/Enter/Space target; changing card resets
 `isRevealed`. No global state library (Redux/Zustand/Context) for the MVP.

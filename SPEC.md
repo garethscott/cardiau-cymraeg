@@ -25,7 +25,7 @@ For example:
 
 ```text
 Mynediad
-  └─ Gweriau
+  └─ Geiriau
        └─ Uned 1
             └─ English → Welsh flashcards
 ```
@@ -77,8 +77,8 @@ Example URLs:
 ```text
 /
 /course/mynediad
-/course/mynediad/gweriau
-/course/mynediad/gweriau/uned-1
+/course/mynediad/words
+/course/mynediad/words/uned-1
 ```
 
 Do not rely exclusively on React Router `location.state` to pass course data
@@ -97,13 +97,30 @@ or directly opening a URL still works.
 ### TypeScript types
 
 ```ts
-export type ContentType = "gweriau" | "units";
+export type ContentType = "words" | "units";
 
-export interface Flashcard {
+/** Singular + plural forms of a word. */
+export interface WordForms {
+  singular: string;
+  plural: string;
+}
+
+/** A phrase / sentence prompt — one string per side. */
+export interface PhraseFlashcard {
   id: string;
   english: string;
   welsh: string;
 }
+
+/** A vocabulary prompt — singular + plural per side (e.g. `dog / dogs` → `ci / cŵn`). */
+export interface WordFlashcard {
+  id: string;
+  english: WordForms;
+  welsh: WordForms;
+}
+
+/** Narrow with `typeof card.welsh === "string"` (→ PhraseFlashcard). */
+export type Flashcard = PhraseFlashcard | WordFlashcard;
 
 export interface Unit {
   id: string;
@@ -114,7 +131,7 @@ export interface Unit {
 export interface CourseSection {
   id: string;
   type: ContentType;
-  title: string;
+  title: string; // display label, e.g. "Geiriau" / "Unedau" — kept free-form
   units: Unit[];
 }
 
@@ -124,6 +141,9 @@ export interface CourseStage {
   courseContent: CourseSection[];
 }
 ```
+
+`"words"` sections hold `WordFlashcard`s; `"units"` sections hold
+`PhraseFlashcard`s.
 
 Terminology can change when the final course data or type is supplied. For now,
 this model is the source of truth.
@@ -143,34 +163,23 @@ export const courses: CourseStage[] = [
     courseTitle: "Mynediad",
     courseContent: [
       {
-        id: "mynediad-gweriau",
-        type: "gweriau",
-        title: "Gweriau",
+        id: "mynediad-words",
+        type: "words",
+        title: "Geiriau",
         units: [
           {
             id: "uned-1",
             unitTitle: "Uned 1",
             slides: [
               {
-                id: "mynediad-gweriau-uned-1-1",
-                english: "How are you?",
-                welsh: "Sut wyt ti?",
+                id: "mynediad-words-uned-1-1",
+                english: { singular: "dog", plural: "dogs" },
+                welsh: { singular: "ci", plural: "cŵn" },
               },
               {
-                id: "mynediad-gweriau-uned-1-2",
-                english: "Good morning",
-                welsh: "Bore da",
-              },
-            ],
-          },
-          {
-            id: "uned-2",
-            unitTitle: "Uned 2",
-            slides: [
-              {
-                id: "mynediad-gweriau-uned-2-1",
-                english: "Thank you",
-                welsh: "Diolch",
+                id: "mynediad-words-uned-1-2",
+                english: { singular: "cat", plural: "cats" },
+                welsh: { singular: "cath", plural: "cathod" },
               },
             ],
           },
@@ -187,8 +196,8 @@ export const courses: CourseStage[] = [
             slides: [
               {
                 id: "mynediad-units-uned-1-1",
-                english: "Hello",
-                welsh: "Helo",
+                english: "Good morning",
+                welsh: "Bore da",
               },
             ],
           },
@@ -200,7 +209,7 @@ export const courses: CourseStage[] = [
     id: "sylfaen",
     courseTitle: "Sylfaen",
     courseContent: [
-      { id: "sylfaen-gweriau", type: "gweriau", title: "Gweriau", units: [] },
+      { id: "sylfaen-words", type: "words", title: "Geiriau", units: [] },
       { id: "sylfaen-units", type: "units", title: "Unedau", units: [] },
     ],
   },
@@ -240,15 +249,15 @@ The destination page uses `courseId` to find the corresponding `CourseStage`.
 ```text
 Mynediad
 
-  Gweriau
+  Geiriau
   Unedau
 ```
 
 The page maps over `selectedCourse.courseContent`. Do not hard-code buttons for
-Gweriau and Unedau — each section is generated from the data.
+Geiriau and Unedau — each section is generated from the data.
 
 Selecting a section navigates to `/course/:courseId/:contentType` (e.g.
-`/course/mynediad/gweriau`).
+`/course/mynediad/words`).
 
 Include a **Back** button that returns to `/`.
 
@@ -258,7 +267,7 @@ Include a **Back** button that returns to `/`.
 - **Purpose:** Display the units belonging to the selected course section.
 
 ```text
-Gweriau
+Geiriau
 
   Uned 1
   Uned 2
@@ -267,7 +276,7 @@ Gweriau
 ```
 
 Each unit is selectable and navigates to
-`/course/:courseId/:contentType/:unitId` (e.g. `/course/mynediad/gweriau/uned-1`).
+`/course/:courseId/:contentType/:unitId` (e.g. `/course/mynediad/words/uned-1`).
 
 Include a **Back** button that returns to `/course/:courseId`.
 
@@ -277,8 +286,11 @@ Include a **Back** button that returns to `/course/:courseId`.
 - **Purpose:** Practise English → Welsh translations.
 
 Retrieve the appropriate unit from the course data using `courseId`,
-`contentType`, and `unitId`. The unit contains `slides: Flashcard[]`, where each
-flashcard has `id`, `english`, and `welsh`.
+`contentType`, and `unitId`. The unit contains `slides: Flashcard[]`. Each
+flashcard has an `id`, plus an `english` and a `welsh` side: for a
+`PhraseFlashcard` both are strings; for a `WordFlashcard` both are `WordForms`
+(`{ singular, plural }`), and the card shows both forms (e.g. `dog / dogs`,
+revealing `ci / cŵn`).
 
 Only one flashcard is active at a time.
 
@@ -360,7 +372,7 @@ data, for example:
 ```text
 /course/not-a-course
 /course/mynediad/not-a-section
-/course/mynediad/gweriau/not-a-unit
+/course/mynediad/words/not-a-unit
 ```
 
 The application must not crash. Show a simple Not Found state with the text
@@ -589,14 +601,14 @@ The MVP is complete when a user can:
 ```text
 Open app
   → Select "Mynediad"
-  → Select "Gweriau"
+  → Select "Geiriau"
   → Select "Uned 1"
-  → See "How are you?"
+  → See "dog / dogs"
   → Think of the Welsh translation
   → Tap the flashcard
-  → See "Sut wyt ti?"
+  → See "ci / cŵn"
   → Move to the next flashcard
-  → See the next English phrase with Welsh hidden
+  → See the next English word with Welsh hidden
 ```
 
 The user must also be able to navigate backwards through each level, and all
