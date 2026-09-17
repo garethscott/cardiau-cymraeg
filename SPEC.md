@@ -99,20 +99,34 @@ or directly opening a URL still works.
 ```ts
 export type ContentType = "words" | "units";
 
-/** Singular + plural forms of a word. */
+/**
+ * Singular (required) + plural (optional) forms of a word. Not every
+ * vocabulary item has a distinct plural — omit `plural` (don't use `""`).
+ */
 export interface WordForms {
   singular: string;
-  plural: string;
+  plural?: string;
 }
 
-/** A phrase / sentence prompt — one string per side. */
+/**
+ * A phrase / sentence prompt — one string per side. `register` is optional and
+ * phrase-only (never on `WordFlashcard`/`WordForms`): set it only where the
+ * course data explicitly establishes the phrase's intended formal/informal
+ * register, never inferred from the Welsh wording. When present, the UI shows
+ * a small "Formal"/"Informal" indicator regardless of reveal state.
+ */
 export interface PhraseFlashcard {
   id: string;
   english: string;
   welsh: string;
+  register?: "formal" | "informal";
 }
 
-/** A vocabulary prompt — singular + plural per side (e.g. `dog / dogs` → `ci / cŵn`). */
+/**
+ * A vocabulary prompt — `WordForms` per side (e.g. `dog / dogs` → `ci / cŵn`,
+ * or just `milk` → `llaeth` when there's no plural). The UI shows the plural
+ * and its `/` separator only when `plural` is present.
+ */
 export interface WordFlashcard {
   id: string;
   english: WordForms;
@@ -143,7 +157,9 @@ export interface CourseStage {
 ```
 
 `"words"` sections hold `WordFlashcard`s; `"units"` sections hold
-`PhraseFlashcard`s.
+`PhraseFlashcard`s. Geiriau (words) cards deal with singular/plural word forms;
+Unedau (units) cards can optionally carry formal/informal register metadata —
+the two concepts are unrelated and never mixed on the same card type.
 
 Terminology can change when the final course data or type is supplied. For now,
 this model is the source of truth.
@@ -289,8 +305,12 @@ Retrieve the appropriate unit from the course data using `courseId`,
 `contentType`, and `unitId`. The unit contains `slides: Flashcard[]`. Each
 flashcard has an `id`, plus an `english` and a `welsh` side: for a
 `PhraseFlashcard` both are strings; for a `WordFlashcard` both are `WordForms`
-(`{ singular, plural }`), and the card shows both forms (e.g. `dog / dogs`,
-revealing `ci / cŵn`).
+(`{ singular, plural? }`), and the card shows the singular, plus the plural (with
+a `/` separator) only when one exists — e.g. `dog / dogs`, revealing `ci / cŵn`;
+or, for a word with no plural, just `milk`, revealing just `llaeth`. A
+`PhraseFlashcard` may also carry an optional `register: "formal" | "informal"`;
+when present, the card shows a small "Formal"/"Informal" indicator regardless of
+reveal state — omitted entirely when `register` is absent.
 
 Only one flashcard is active at a time.
 

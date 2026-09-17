@@ -73,3 +73,29 @@ export default defineConfig([
 ])
 
 ```
+
+## Deployment
+
+Deployed via GitHub → Vercel automatic deployments. Workflow:
+
+```
+local changes → npm run build / lint / test → commit → push to GitHub → Vercel deploys automatically
+```
+
+**Vercel project settings** (all defaults — nothing overridden):
+
+| Setting | Value |
+| --- | --- |
+| Framework Preset | Vite (auto-detected) |
+| Build Command | default (`npm run build`, i.e. `tsc -b && vite build`) |
+| Output Directory | default (`dist`) |
+| Install Command | default (`npm install`) |
+
+**SPA routing:** the app uses React Router's `BrowserRouter` with nested client
+routes (`/course/:courseId`, `/course/:courseId/:contentType`, etc.), so a
+direct load or refresh on one of those URLs has no matching static file.
+`vercel.json` adds a single rewrite (`/(.*)` → `/index.html`) so every path is
+served through the SPA and handled client-side.
+
+**Environment variables:** none required — the app currently reads no
+`import.meta.env`/`process.env` values. Nothing to configure in Vercel.

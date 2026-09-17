@@ -65,8 +65,14 @@ rather than throwing.
 Section `type` (the `:contentType` param) is `"words" | "units"` and drives
 behaviour; section `title` is free-form display text (`"Geiriau"`, `"Unedau"`).
 `Flashcard` is a discriminated union: `PhraseFlashcard` (`english`/`welsh` both
-`string`) or `WordFlashcard` (both `WordForms` `{ singular, plural }`, shown as
-`dog / dogs` → `ci / cŵn`). Narrow with `typeof card.welsh === 'string'`.
+`string`) or `WordFlashcard` (both `WordForms { singular; plural? }`). `plural`
+is optional — omit it, don't use `""`; the UI shows the plural + `/` separator
+only when present (`dog / dogs` → `ci / cŵn`, or just `milk` → `llaeth`).
+Narrow with `typeof card.welsh === 'string'`. Geiriau (`words`/`WordFlashcard`)
+and Unedau (`units`/`PhraseFlashcard`) are unrelated domains: only
+`PhraseFlashcard` may carry an optional `register: 'formal' | 'informal'`,
+shown as a small always-visible indicator — set it only where the course data
+explicitly states the intended register, never inferred from the Welsh text.
 
 Flashcard behaviour: only local `useState` (`currentCardIndex`, `isRevealed`).
 The whole card is the click/Enter/Space target; changing card resets

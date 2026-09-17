@@ -1,9 +1,7 @@
-import { render, screen } from '@testing-library/react'
-import App from './App'
+import { screen } from '@testing-library/react'
+import { renderApp } from './test/renderApp'
 
-test('renders the app title', () => {
-  render(<App />)
-  expect(
-    screen.getByRole('heading', { name: /cardiau cymraeg/i }),
-  ).toBeInTheDocument()
+test('an unknown path renders the Not Found catch-all', () => {
+  renderApp('/totally/not/a/real/path')
+  expect(screen.getByRole('heading', { name: /content not found/i })).toBeInTheDocument()
 })
