@@ -1,6 +1,7 @@
 import type { CourseStage } from "../types/course";
-import { geiraiauUned1 } from "./mynediad/geiriau";
-import { unedauUned1 } from "./mynediad/unedau";
+import { geiraiauUned1, geiraiauUned2 } from "./mynediad/geiriau";
+import { unedauUned1, unedauUned2 } from "./mynediad/unedau";
+import { geiraiauSylaenUned1 } from "./sylfaen/geiriau";
 
 // Representative development data only (SPEC.md §5). The Welsh translations —
 // noun plurals especially — are best-effort placeholders and NOT authoritative;
@@ -35,28 +36,7 @@ export const courses: CourseStage[] = [
           {
             id: "uned-2",
             unitTitle: "Uned 2",
-            slides: [
-              {
-                id: "mynediad-words-uned-2-1",
-                english: { singular: "house", plural: "houses" },
-                welsh: { singular: "tŷ", plural: "tai" },
-              },
-              {
-                id: "mynediad-words-uned-2-2",
-                english: { singular: "door", plural: "doors" },
-                welsh: { singular: "drws", plural: "drysau" },
-              },
-              {
-                id: "mynediad-words-uned-2-3",
-                english: { singular: "window", plural: "windows" },
-                welsh: { singular: "ffenest", plural: "ffenestri" },
-              },
-              {
-                id: "mynediad-words-uned-2-4",
-                english: { singular: "room", plural: "rooms" },
-                welsh: { singular: "ystafell", plural: "ystafelloedd" },
-              },
-            ],
+            slides: geiraiauUned2,
           },
           {
             id: "uned-3",
@@ -99,29 +79,7 @@ export const courses: CourseStage[] = [
           {
             id: "uned-2",
             unitTitle: "Uned 2",
-            slides: [
-              {
-                id: "mynediad-units-uned-2-1",
-                english: "What is your name?",
-                welsh: "Beth ydy dy enw di?",
-                register: "informal",
-              },
-              {
-                id: "mynediad-units-uned-2-2",
-                english: "My name is Elin",
-                welsh: "Elin dw i",
-              },
-              {
-                id: "mynediad-units-uned-2-3",
-                english: "Where do you live?",
-                welsh: "Ble wyt ti'n byw?",
-              },
-              {
-                id: "mynediad-units-uned-2-4",
-                english: "I live in Bangor",
-                welsh: "Dw i'n byw ym Mangor",
-              },
-            ],
+            slides: unedauUned2,
           },
           {
             id: "uned-3",
@@ -163,30 +121,9 @@ export const courses: CourseStage[] = [
         title: "Geiriau",
         units: [
           {
-            id: "uned-1",
-            unitTitle: "Uned 1",
-            slides: [
-              {
-                id: "sylfaen-words-uned-1-1",
-                english: { singular: "shop", plural: "shops" },
-                welsh: { singular: "siop", plural: "siopau" },
-              },
-              {
-                id: "sylfaen-words-uned-1-2",
-                english: { singular: "street", plural: "streets" },
-                welsh: { singular: "stryd", plural: "strydoedd" },
-              },
-              {
-                id: "sylfaen-words-uned-1-3",
-                english: { singular: "school", plural: "schools" },
-                welsh: { singular: "ysgol", plural: "ysgolion" },
-              },
-              {
-                id: "sylfaen-words-uned-1-4",
-                english: { singular: "church", plural: "churches" },
-                welsh: { singular: "eglwys", plural: "eglwysi" },
-              },
-            ],
+            id: "uned-15",
+            unitTitle: "Uned 15",
+            slides: geiraiauSylaenUned1,
           },
           {
             id: "uned-2",
