@@ -2,6 +2,7 @@ import type { CourseStage } from "../types/course";
 import { geiraiauUned1, geiraiauUned2 } from "./mynediad/geiriau";
 import { unedauUned1, unedauUned2 } from "./mynediad/unedau";
 import { geiraiauSylaenUned1 } from "./sylfaen/geiriau";
+import { unedauSylfaenUned15 } from "./sylfaen/unedau";
 
 // Representative development data only (SPEC.md §5). The Welsh translations —
 // noun plurals especially — are best-effort placeholders and NOT authoritative;
@@ -185,82 +186,9 @@ export const courses: CourseStage[] = [
         title: "Unedau",
         units: [
           {
-            id: "uned-1",
-            unitTitle: "Uned 1",
-            slides: [
-              {
-                id: "sylfaen-units-uned-1-1",
-                english: "I went to town",
-                welsh: "Es i i'r dref",
-              },
-              {
-                id: "sylfaen-units-uned-1-2",
-                english: "I had a coffee",
-                welsh: "Ces i goffi",
-              },
-              {
-                id: "sylfaen-units-uned-1-3",
-                english: "Did you see the film?",
-                welsh: "Welaist ti'r ffilm?",
-              },
-              {
-                id: "sylfaen-units-uned-1-4",
-                english: "It was raining",
-                welsh: "Roedd hi'n bwrw glaw",
-              },
-            ],
-          },
-          {
-            id: "uned-2",
-            unitTitle: "Uned 2",
-            slides: [
-              {
-                id: "sylfaen-units-uned-2-1",
-                english: "I think that...",
-                welsh: "Dw i'n meddwl bod...",
-              },
-              {
-                id: "sylfaen-units-uned-2-2",
-                english: "In my opinion",
-                welsh: "Yn fy marn i",
-              },
-              {
-                id: "sylfaen-units-uned-2-3",
-                english: "I agree",
-                welsh: "Dw i'n cytuno",
-              },
-              {
-                id: "sylfaen-units-uned-2-4",
-                english: "I disagree",
-                welsh: "Dw i'n anghytuno",
-              },
-            ],
-          },
-          {
-            id: "uned-3",
-            unitTitle: "Uned 3",
-            slides: [
-              {
-                id: "sylfaen-units-uned-3-1",
-                english: "I will go tomorrow",
-                welsh: "Bydda i'n mynd yfory",
-              },
-              {
-                id: "sylfaen-units-uned-3-2",
-                english: "What will you do?",
-                welsh: "Beth wnei di?",
-              },
-              {
-                id: "sylfaen-units-uned-3-3",
-                english: "next week",
-                welsh: "wythnos nesaf",
-              },
-              {
-                id: "sylfaen-units-uned-3-4",
-                english: "I hope to visit",
-                welsh: "Dw i'n gobeithio ymweld",
-              },
-            ],
+            id: "uned-15",
+            unitTitle: "Uned 15",
+            slides: unedauSylfaenUned15,
           },
         ],
       },
