@@ -1,7 +1,7 @@
 import type { CourseStage } from "../types/course";
 import { geiraiauUned1, geiraiauUned2 } from "./mynediad/geiriau";
 import { unedauUned1, unedauUned2 } from "./mynediad/unedau";
-import { geiraiauSylaenUned1 } from "./sylfaen/geiriau";
+import { geiraiauSylaenUned15, geiraiauSylaenUned16 } from "./sylfaen/geiriau";
 import { unedauSylfaenUned15 } from "./sylfaen/unedau";
 
 // Representative development data only (SPEC.md §5). The Welsh translations —
@@ -124,59 +124,12 @@ export const courses: CourseStage[] = [
           {
             id: "uned-15",
             unitTitle: "Uned 15",
-            slides: geiraiauSylaenUned1,
+            slides: geiraiauSylaenUned15,
           },
           {
             id: "uned-2",
-            unitTitle: "Uned 2",
-            slides: [
-              {
-                id: "sylfaen-words-uned-2-1",
-                english: { singular: "tree", plural: "trees" },
-                welsh: { singular: "coeden", plural: "coed" },
-              },
-              {
-                id: "sylfaen-words-uned-2-2",
-                english: { singular: "mountain", plural: "mountains" },
-                welsh: { singular: "mynydd", plural: "mynyddoedd" },
-              },
-              {
-                id: "sylfaen-words-uned-2-3",
-                english: { singular: "river", plural: "rivers" },
-                welsh: { singular: "afon", plural: "afonydd" },
-              },
-              {
-                id: "sylfaen-words-uned-2-4",
-                english: { singular: "flower", plural: "flowers" },
-                welsh: { singular: "blodyn", plural: "blodau" },
-              },
-            ],
-          },
-          {
-            id: "uned-3",
-            unitTitle: "Uned 3",
-            slides: [
-              {
-                id: "sylfaen-words-uned-3-1",
-                english: { singular: "book", plural: "books" },
-                welsh: { singular: "llyfr", plural: "llyfrau" },
-              },
-              {
-                id: "sylfaen-words-uned-3-2",
-                english: { singular: "table", plural: "tables" },
-                welsh: { singular: "bwrdd", plural: "byrddau" },
-              },
-              {
-                id: "sylfaen-words-uned-3-3",
-                english: { singular: "car", plural: "cars" },
-                welsh: { singular: "car", plural: "ceir" },
-              },
-              {
-                id: "sylfaen-words-uned-3-4",
-                english: { singular: "chair", plural: "chairs" },
-                welsh: { singular: "cadair", plural: "cadeiriau" },
-              },
-            ],
+            unitTitle: "Uned 16",
+            slides: geiraiauSylaenUned16,
           },
         ],
       },
