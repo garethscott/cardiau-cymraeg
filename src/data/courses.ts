@@ -2,7 +2,7 @@ import type { CourseStage } from "../types/course";
 import { geiraiauUned1, geiraiauUned2 } from "./mynediad/geiriau";
 import { unedauUned1, unedauUned2 } from "./mynediad/unedau";
 import { geiraiauSylaenUned15, geiraiauSylaenUned16 } from "./sylfaen/geiriau";
-import { unedauSylfaenUned15 } from "./sylfaen/unedau";
+import { unedauSylfaenUned15, unedauSylfaenUned16 } from "./sylfaen/unedau";
 
 // Representative development data only (SPEC.md §5). The Welsh translations —
 // noun plurals especially — are best-effort placeholders and NOT authoritative;
@@ -142,6 +142,11 @@ export const courses: CourseStage[] = [
             id: "uned-15",
             unitTitle: "Uned 15",
             slides: unedauSylfaenUned15,
+          },
+          {
+            id: "uned-15",
+            unitTitle: "Uned 15",
+            slides: unedauSylfaenUned16,
           },
         ],
       },

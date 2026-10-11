@@ -430,3 +430,278 @@ export const unedauSylfaenUned15: PhraseFlashcard[] = [
     welsh: "Dydy hi ddim mor wyntog â ddoe.",
   },
 ];
+
+export const unedauSylfaenUned16: PhraseFlashcard[] = [
+  {
+    id: "sylfaen-units-16-1",
+    english: "I am taller than you.",
+    welsh: "Dw i'n dalach na chi.",
+  },
+  {
+    id: "sylfaen-units-16-2",
+    english: "I am shorter than you.",
+    welsh: "Dw i'n fyrrach na chi.",
+  },
+  {
+    id: "sylfaen-units-16-3",
+    english: "I am faster than you.",
+    welsh: "Dw i'n gyflymach na chi.",
+  },
+  {
+    id: "sylfaen-units-16-4",
+    english: "I am faster than everyone.",
+    welsh: "Dw i'n gyflymach na phawb.",
+  },
+  {
+    id: "sylfaen-units-16-5",
+    english: "It is colder today.",
+    welsh: "Mae hi'n oerach heddiw.",
+  },
+  {
+    id: "sylfaen-units-16-6",
+    english: "It is drier today.",
+    welsh: "Mae hi'n sychach heddiw.",
+  },
+  {
+    id: "sylfaen-units-16-7",
+    english: "It is warmer today.",
+    welsh: "Mae hi'n gynhesach heddiw.",
+  },
+  {
+    id: "sylfaen-units-16-8",
+    english: "It is wetter today.",
+    welsh: "Mae hi'n wlypach heddiw.",
+  },
+  {
+    id: "sylfaen-units-16-9",
+    english: "An elephant is tall.",
+    welsh: "Mae eliffant yn dal.",
+  },
+  {
+    id: "sylfaen-units-16-10",
+    english: "A giraffe is taller.",
+    welsh: "Mae jiraff yn dalach.",
+  },
+  {
+    id: "sylfaen-units-16-11",
+    english: "London is far.",
+    welsh: "Mae Llundain yn bell.",
+  },
+  {
+    id: "sylfaen-units-16-12",
+    english: "Paris is further.",
+    welsh: "Mae Paris yn bellach.",
+  },
+  {
+    id: "sylfaen-units-16-13",
+    english: "Aberystwyth is near.",
+    welsh: "Mae Aberystwyth yn agos.",
+  },
+  {
+    id: "sylfaen-units-16-14",
+    english: "Llandudno is closer/nearer.",
+    welsh: "Mae Llandudno yn agosach.",
+  },
+  {
+    id: "sylfaen-units-16-15",
+    english: "Your hands are cold.",
+    welsh: "Mae dy ddwylo di'n oer.",
+  },
+  {
+    id: "sylfaen-units-16-16",
+    english: "Your feet are colder.",
+    welsh: "Mae dy draed di'n oerach.",
+  },
+  {
+    id: "sylfaen-units-16-17",
+    english: "London is expensive.",
+    welsh: "Mae Llundain yn ddrud.",
+  },
+  {
+    id: "sylfaen-units-16-18",
+    english: "Paris is more expensive.",
+    welsh: "Mae Paris yn ddrutach.",
+  },
+  {
+    id: "sylfaen-units-16-19",
+    english: "Pasta is cheap.",
+    welsh: "Mae pasta'n rhad.",
+  },
+  {
+    id: "sylfaen-units-16-20",
+    english: "Potatoes are cheaper.",
+    welsh: "Mae tatws yn rhatach.",
+  },
+
+  // Irregular comparisons
+
+  {
+    id: "sylfaen-units-16-21",
+    english: "Cardiff is bigger than Swansea.",
+    welsh: "Mae Caerdydd yn fwy nag Abertawe.",
+  },
+  {
+    id: "sylfaen-units-16-22",
+    english: "Cardiff is smaller than London.",
+    welsh: "Mae Caerdydd yn llai na Llundain.",
+  },
+  {
+    id: "sylfaen-units-16-23",
+    english: "Football is better than rugby.",
+    welsh: "Mae pêl-droed yn well na rygbi.",
+  },
+  {
+    id: "sylfaen-units-16-24",
+    english: "Wind is worse than rain.",
+    welsh: "Mae gwynt yn waeth na glaw.",
+  },
+
+  // Older, younger, higher and lower
+
+  {
+    id: "sylfaen-units-16-25",
+    english: "Mum is old.",
+    welsh: "Mae Mam yn hen.",
+  },
+  {
+    id: "sylfaen-units-16-26",
+    english: "Grandmother is older.",
+    welsh: "Mae Nain yn hŷn.",
+  },
+  {
+    id: "sylfaen-units-16-27",
+    english: "A child is young.",
+    welsh: "Mae plentyn yn ifanc.",
+  },
+  {
+    id: "sylfaen-units-16-28",
+    english: "A baby is younger.",
+    welsh: "Mae babi yn fengach.",
+  },
+  {
+    id: "sylfaen-units-16-29",
+    english: "Snowdon is high.",
+    welsh: "Mae'r Wyddfa'n uchel.",
+  },
+  {
+    id: "sylfaen-units-16-30",
+    english: "Ben Nevis is higher.",
+    welsh: "Mae Ben Nevis yn uwch.",
+  },
+  {
+    id: "sylfaen-units-16-31",
+    english: "Ben Nevis is high.",
+    welsh: "Mae Ben Nevis yn uchel.",
+  },
+  {
+    id: "sylfaen-units-16-32",
+    english: "Everest is higher.",
+    welsh: "Mae Everest yn uwch.",
+  },
+  {
+    id: "sylfaen-units-16-33",
+    english: "An alto voice is low.",
+    welsh: "Mae llais alto yn isel.",
+  },
+  {
+    id: "sylfaen-units-16-34",
+    english: "A bass voice is lower.",
+    welsh: "Mae llais bas yn is.",
+  },
+  {
+    id: "sylfaen-units-16-35",
+    english: "Three is a low number.",
+    welsh: "Mae tri yn rhif isel.",
+  },
+  {
+    id: "sylfaen-units-16-36",
+    english: "One is a lower number.",
+    welsh: "Mae un yn rhif is.",
+  },
+
+  // More ... than
+
+  {
+    id: "sylfaen-units-16-37",
+    english: "Jac is more talented than Sam.",
+    welsh: "Mae Jac yn fwy dawnus na Sam.",
+  },
+  {
+    id: "sylfaen-units-16-38",
+    english: "Sam is richer than Jac.",
+    welsh: "Mae Sam yn fwy cyfoethog na Jac.",
+  },
+  {
+    id: "sylfaen-units-16-39",
+    english: "Football is more interesting than cricket.",
+    welsh: "Mae pêl-droed yn fwy diddorol na chriced.",
+  },
+  {
+    id: "sylfaen-units-16-40",
+    english: "Rugby is more exciting than football.",
+    welsh: "Mae rygbi'n fwy cyffrous na phêl-droed.",
+  },
+  {
+    id: "sylfaen-units-16-41",
+    english: "A trombone is noisier than a harp.",
+    welsh: "Mae trombôn yn fwy swnllyd na thelyn.",
+  },
+  {
+    id: "sylfaen-units-16-42",
+    english: "An orange is tastier than an apple.",
+    welsh: "Mae oren yn fwy blasus nag afal.",
+  },
+
+  // Comparing yesterday's and today's weather
+
+  {
+    id: "sylfaen-units-16-43",
+    english: "What was the weather like yesterday?",
+    welsh: "Sut oedd y tywydd ddoe?",
+  },
+  {
+    id: "sylfaen-units-16-44",
+    english: "What's the weather like today?",
+    welsh: "Sut mae'r tywydd heddiw?",
+  },
+  {
+    id: "sylfaen-units-16-45",
+    english: "It was wetter yesterday.",
+    welsh: "Roedd hi'n wlypach ddoe.",
+  },
+  {
+    id: "sylfaen-units-16-46",
+    english: "It is drier today.",
+    welsh: "Mae hi'n sychach heddiw.",
+  },
+  {
+    id: "sylfaen-units-16-47",
+    english: "It was stormier yesterday.",
+    welsh: "Roedd hi'n fwy stormus ddoe.",
+  },
+  {
+    id: "sylfaen-units-16-48",
+    english: "It is less stormy today.",
+    welsh: "Mae hi'n llai stormus heddiw.",
+  },
+  {
+    id: "sylfaen-units-16-49",
+    english: "It was cloudier yesterday.",
+    welsh: "Roedd hi'n fwy cymylog ddoe.",
+  },
+  {
+    id: "sylfaen-units-16-50",
+    english: "It is sunnier today.",
+    welsh: "Mae hi'n fwy heulog heddiw.",
+  },
+  {
+    id: "sylfaen-units-16-51",
+    english: "It was windier yesterday.",
+    welsh: "Roedd hi'n fwy gwyntog ddoe.",
+  },
+  {
+    id: "sylfaen-units-16-52",
+    english: "It is less windy today.",
+    welsh: "Mae hi'n llai gwyntog heddiw.",
+  },
+];
