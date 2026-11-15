@@ -1,8 +1,16 @@
 import type { CourseStage } from "../types/course";
 import { geiraiauUned1, geiraiauUned2 } from "./mynediad/geiriau";
 import { unedauUned1, unedauUned2 } from "./mynediad/unedau";
-import { geiraiauSylaenUned15, geiraiauSylaenUned16 } from "./sylfaen/geiriau";
-import { unedauSylfaenUned15, unedauSylfaenUned16 } from "./sylfaen/unedau";
+import {
+  geiraiauSylaenUned15,
+  geiraiauSylaenUned16,
+  geiraiauSylaenUned17,
+} from "./sylfaen/geiriau";
+import {
+  unedauSylfaenUned15,
+  unedauSylfaenUned16,
+  unedauSylfaenUned17,
+} from "./sylfaen/unedau";
 
 // Representative development data only (SPEC.md §5). The Welsh translations —
 // noun plurals especially — are best-effort placeholders and NOT authoritative;
@@ -127,9 +135,14 @@ export const courses: CourseStage[] = [
             slides: geiraiauSylaenUned15,
           },
           {
-            id: "uned-2",
+            id: "uned-16",
             unitTitle: "Uned 16",
             slides: geiraiauSylaenUned16,
+          },
+          {
+            id: "uned-17",
+            unitTitle: "Uned 17",
+            slides: geiraiauSylaenUned17,
           },
         ],
       },
@@ -147,6 +160,11 @@ export const courses: CourseStage[] = [
             id: "uned-16",
             unitTitle: "Uned 16",
             slides: unedauSylfaenUned16,
+          },
+          {
+            id: "uned-16",
+            unitTitle: "Uned 16",
+            slides: unedauSylfaenUned17,
           },
         ],
       },

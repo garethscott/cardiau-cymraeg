@@ -705,3 +705,430 @@ export const unedauSylfaenUned16: PhraseFlashcard[] = [
     welsh: "Mae hi'n llai gwyntog heddiw.",
   },
 ];
+
+export const unedauSylfaenUned17: PhraseFlashcard[] = [
+  // Describing people - superlatives
+
+  {
+    id: "sylfaen-units-17-1",
+    english: "Geraint is the tallest.",
+    welsh: "Geraint ydy'r tala.",
+  },
+  {
+    id: "sylfaen-units-17-2",
+    english: "Geraint is the strongest.",
+    welsh: "Geraint ydy'r cryfa.",
+  },
+  {
+    id: "sylfaen-units-17-3",
+    english: "Geraint is the oldest.",
+    welsh: "Geraint ydy'r hyna.",
+  },
+  {
+    id: "sylfaen-units-17-4",
+    english: "Geraint is the youngest.",
+    welsh: "Geraint ydy'r fenga.",
+  },
+  {
+    id: "sylfaen-units-17-5",
+    english: "Ann is the oldest.",
+    welsh: "Ann ydy'r hyna.",
+  },
+  {
+    id: "sylfaen-units-17-6",
+    english: "Ann is the youngest.",
+    welsh: "Ann ydy'r fenga.",
+  },
+  {
+    id: "sylfaen-units-17-7",
+    english: "Ann is the tallest.",
+    welsh: "Ann ydy'r dala.",
+  },
+  {
+    id: "sylfaen-units-17-8",
+    english: "Ann is the most sensible.",
+    welsh: "Ann ydy'r galla.",
+  },
+  {
+    id: "sylfaen-units-17-9",
+    english: "They are the most sensible.",
+    welsh: "Nhw ydy'r calla.",
+  },
+  {
+    id: "sylfaen-units-17-10",
+    english: "They are the tallest.",
+    welsh: "Nhw ydy'r tala.",
+  },
+  {
+    id: "sylfaen-units-17-11",
+    english: "They are the darkest.",
+    welsh: "Nhw ydy'r tywylla.",
+  },
+  {
+    id: "sylfaen-units-17-12",
+    english: "They are the lightest.",
+    welsh: "Nhw ydy'r ysgafna.",
+  },
+
+  // Irregular superlatives
+
+  {
+    id: "sylfaen-units-17-13",
+    english: "He is the best.",
+    welsh: "Fo ydy'r gorau.",
+  },
+  {
+    id: "sylfaen-units-17-14",
+    english: "He is the worst.",
+    welsh: "Fo ydy'r gwaetha.",
+  },
+  {
+    id: "sylfaen-units-17-15",
+    english: "He is the biggest.",
+    welsh: "Fo ydy'r mwya.",
+  },
+  {
+    id: "sylfaen-units-17-16",
+    english: "He is the smallest.",
+    welsh: "Fo ydy'r lleia.",
+  },
+  {
+    id: "sylfaen-units-17-17",
+    english: "She is the best.",
+    welsh: "Hi ydy'r orau.",
+  },
+  {
+    id: "sylfaen-units-17-18",
+    english: "She is the worst.",
+    welsh: "Hi ydy'r waetha.",
+  },
+  {
+    id: "sylfaen-units-17-19",
+    english: "She is the biggest.",
+    welsh: "Hi ydy'r fwya.",
+  },
+  {
+    id: "sylfaen-units-17-20",
+    english: "She is the smallest.",
+    welsh: "Hi ydy'r lleia.",
+  },
+
+  // Restaurants and shops
+
+  {
+    id: "sylfaen-units-17-21",
+    english: "Y Sosban is the best restaurant.",
+    welsh: "Y Sosban ydy'r bwyty gorau.",
+  },
+  {
+    id: "sylfaen-units-17-22",
+    english: "Y Sosban is the worst restaurant.",
+    welsh: "Y Sosban ydy'r bwyty gwaetha.",
+  },
+  {
+    id: "sylfaen-units-17-23",
+    english: "Siop y Gornel is the most expensive shop.",
+    welsh: "Siop y Gornel ydy'r siop ddruta.",
+  },
+  {
+    id: "sylfaen-units-17-24",
+    english: "Siop y Gornel is the cheapest shop.",
+    welsh: "Siop y Gornel ydy'r siop rata.",
+  },
+
+  // Describing places
+
+  {
+    id: "sylfaen-units-17-25",
+    english: "Cardiff is the biggest city in Wales.",
+    welsh: "Caerdydd ydy'r ddinas fwya yng Nghymru.",
+  },
+  {
+    id: "sylfaen-units-17-26",
+    english: "St Davids is the smallest city in Wales.",
+    welsh: "Tyddewi ydy'r ddinas leia yng Nghymru.",
+  },
+  {
+    id: "sylfaen-units-17-27",
+    english: "Cardiff is the noisiest city.",
+    welsh: "Caerdydd ydy'r ddinas fwya swnllyd.",
+  },
+  {
+    id: "sylfaen-units-17-28",
+    english: "St Davids is the least noisy city.",
+    welsh: "Tyddewi ydy'r ddinas leia swnllyd.",
+  },
+
+  // Family - questions and answers
+
+  {
+    id: "sylfaen-units-17-29",
+    english: "Who is the tallest in the family?",
+    welsh: "Pwy ydy'r tala yn y teulu?",
+  },
+  {
+    id: "sylfaen-units-17-30",
+    english: "Who is the youngest in the family?",
+    welsh: "Pwy ydy'r fenga yn y teulu?",
+  },
+  {
+    id: "sylfaen-units-17-31",
+    english: "Who is the most careful in the family?",
+    welsh: "Pwy ydy'r mwya gofalus yn y teulu?",
+  },
+  {
+    id: "sylfaen-units-17-32",
+    english: "Who is the most organised in the family?",
+    welsh: "Pwy ydy'r mwya trefnus yn y teulu?",
+  },
+  {
+    id: "sylfaen-units-17-33",
+    english: "Grandad is the tallest.",
+    welsh: "Taid ydy'r tala.",
+  },
+  {
+    id: "sylfaen-units-17-34",
+    english: "My niece is the youngest.",
+    welsh: "Fy wyres i ydy'r fenga.",
+  },
+  {
+    id: "sylfaen-units-17-35",
+    english: "Siân is the most careful.",
+    welsh: "Siân ydy'r fwya gofalus.",
+  },
+  {
+    id: "sylfaen-units-17-36",
+    english: "I am the most organised.",
+    welsh: "Fi ydy'r mwya trefnus.",
+  },
+  {
+    id: "sylfaen-units-17-37",
+    english: "I am the most organised.",
+    welsh: "Fi ydy'r fwya trefnus.",
+  },
+
+  // Questions about places in Wales
+
+  {
+    id: "sylfaen-units-17-38",
+    english: "Is Cardiff the busiest place in Wales?",
+    welsh: "Caerdydd ydy'r lle prysura yng Nghymru?",
+  },
+  {
+    id: "sylfaen-units-17-39",
+    english: "Yes, Cardiff is the busiest place.",
+    welsh: "Ia, Caerdydd ydy'r lle prysura.",
+  },
+  {
+    id: "sylfaen-units-17-40",
+    english: "Is Llandudno the prettiest place in Wales?",
+    welsh: "Llandudno ydy'r lle dela yng Nghymru?",
+  },
+  {
+    id: "sylfaen-units-17-41",
+    english: "No, Llangollen is the prettiest place.",
+    welsh: "Na, Llangollen ydy'r lle dela.",
+  },
+  {
+    id: "sylfaen-units-17-42",
+    english: "Is Llanrwst the wettest place in Wales?",
+    welsh: "Llanrwst ydy'r lle gwlypa yng Nghymru?",
+  },
+  {
+    id: "sylfaen-units-17-43",
+    english: "No, Blaenau Ffestiniog is the wettest place.",
+    welsh: "Na, Blaenau Ffestiniog ydy'r lle gwlypa.",
+  },
+  {
+    id: "sylfaen-units-17-44",
+    english: "Is Pwllheli the best beach in Wales?",
+    welsh: "Pwllheli ydy'r traeth gorau yng Nghymru?",
+  },
+  {
+    id: "sylfaen-units-17-45",
+    english: "No, Prestatyn is the best beach.",
+    welsh: "Na, Prestatyn ydy'r traeth gorau.",
+  },
+
+  // Opinion questions - superlative practice
+
+  {
+    id: "sylfaen-units-17-46",
+    english: "Is Llangollen the prettiest place?",
+    welsh: "Llangollen ydy'r lle dela?",
+  },
+  {
+    id: "sylfaen-units-17-47",
+    english: "Is Snowdonia the prettiest area?",
+    welsh: "Eryri ydy'r ardal ddela?",
+  },
+  {
+    id: "sylfaen-units-17-48",
+    english: "Is a calf the cutest animal?",
+    welsh: "Llo ydy'r anifail dela?",
+  },
+  {
+    id: "sylfaen-units-17-49",
+    english: "Is a pig the fattest animal?",
+    welsh: "Mochyn ydy'r anifail tewa?",
+  },
+  {
+    id: "sylfaen-units-17-50",
+    english: "Is Prestatyn the best beach?",
+    welsh: "Prestatyn ydy'r traeth gorau?",
+  },
+  {
+    id: "sylfaen-units-17-51",
+    english: "Are the Beatles the best group?",
+    welsh: "Y Beatles ydy'r grŵp gorau?",
+  },
+  {
+    id: "sylfaen-units-17-52",
+    english: "Is Wrexham the best football team?",
+    welsh: "Wrecsam ydy'r tîm pêl-droed gorau?",
+  },
+  {
+    id: "sylfaen-units-17-53",
+    english: "Is Gatwick Airport the best airport?",
+    welsh: "Maes awyr Gatwick ydy'r maes awyr gorau?",
+  },
+  {
+    id: "sylfaen-units-17-54",
+    english: "Is August the best month?",
+    welsh: "Mis Awst ydy'r mis gorau?",
+  },
+  {
+    id: "sylfaen-units-17-55",
+    english: "Is Saturday the best day?",
+    welsh: "Dydd Sadwrn ydy'r diwrnod gorau?",
+  },
+  {
+    id: "sylfaen-units-17-56",
+    english: "Is goat's milk the best milk?",
+    welsh: "Llefrith gafr ydy'r llefrith gorau?",
+  },
+  {
+    id: "sylfaen-units-17-57",
+    english: "Is Welsh the easiest language?",
+    welsh: "Cymraeg ydy'r iaith hawdda?",
+  },
+  {
+    id: "sylfaen-units-17-58",
+    english: "Is German the most difficult language?",
+    welsh: "Almaeneg ydy'r iaith anodda?",
+  },
+  {
+    id: "sylfaen-units-17-59",
+    english: "Is Greece the warmest country?",
+    welsh: "Gwlad Groeg ydy'r wlad gynhesa?",
+  },
+  {
+    id: "sylfaen-units-17-60",
+    english: "Are Rice Krispies the tastiest cereal?",
+    welsh: "Rice Krispies ydy'r grawnfwyd mwya blasus?",
+  },
+
+  // Grammar - forming superlatives
+
+  {
+    id: "sylfaen-units-17-61",
+    english: "tall",
+    welsh: "tal",
+  },
+  {
+    id: "sylfaen-units-17-62",
+    english: "the tallest",
+    welsh: "y tala",
+  },
+  {
+    id: "sylfaen-units-17-63",
+    english: "hot",
+    welsh: "poeth",
+  },
+  {
+    id: "sylfaen-units-17-64",
+    english: "the hottest",
+    welsh: "y poetha",
+  },
+  {
+    id: "sylfaen-units-17-65",
+    english: "cheap",
+    welsh: "rhad",
+  },
+  {
+    id: "sylfaen-units-17-66",
+    english: "the cheapest",
+    welsh: "y rhata",
+  },
+  {
+    id: "sylfaen-units-17-67",
+    english: "pretty",
+    welsh: "teg",
+  },
+  {
+    id: "sylfaen-units-17-68",
+    english: "the prettiest",
+    welsh: "y teca",
+  },
+  {
+    id: "sylfaen-units-17-69",
+    english: "wet",
+    welsh: "gwlyb",
+  },
+  {
+    id: "sylfaen-units-17-70",
+    english: "the wettest",
+    welsh: "y gwlypa",
+  },
+
+  // Grammar - emphasis and word order
+
+  {
+    id: "sylfaen-units-17-71",
+    english: "I am the tallest in the family.",
+    welsh: "Fi ydy'r tala yn y teulu.",
+  },
+  {
+    id: "sylfaen-units-17-72",
+    english: "Cardiff is the biggest place in Wales.",
+    welsh: "Caerdydd ydy'r lle mwya yng Nghymru.",
+  },
+  {
+    id: "sylfaen-units-17-73",
+    english: "Richard Burton was the best actor.",
+    welsh: "Richard Burton oedd yr actor gorau.",
+  },
+  {
+    id: "sylfaen-units-17-74",
+    english: "John will be the captain.",
+    welsh: "John fydd y capten.",
+  },
+
+  // Grammar - feminine mutation after "y"
+
+  {
+    id: "sylfaen-units-17-75",
+    english: "Gareth is the tallest.",
+    welsh: "Gareth ydy'r tala.",
+  },
+  {
+    id: "sylfaen-units-17-76",
+    english: "Mari is the tallest.",
+    welsh: "Mari ydy'r dala.",
+  },
+  {
+    id: "sylfaen-units-17-77",
+    english: "The boy is the tallest.",
+    welsh: "Y bachgen ydy'r tala.",
+  },
+  {
+    id: "sylfaen-units-17-78",
+    english: "The girl is the tallest.",
+    welsh: "Y ferch ydy'r dala.",
+  },
+  {
+    id: "sylfaen-units-17-79",
+    english: "The girls are the tallest.",
+    welsh: "Y merched ydy'r tala.",
+  },
+];

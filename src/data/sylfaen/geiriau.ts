@@ -351,3 +351,91 @@ export const geiraiauSylaenUned16: WordFlashcard[] = [
     welsh: { singular: "yn y bôn", plural: undefined },
   },
 ];
+
+export const geiraiauSylaenUned17: WordFlashcard[] = [
+  {
+    id: "sylfaen-words-uned-17-1",
+    english: { singular: "corner", plural: "corners" },
+    welsh: { singular: "cornel", plural: "corneli" },
+  },
+  {
+    id: "sylfaen-words-uned-17-2",
+    english: { singular: "view, scenery", plural: "views" },
+    welsh: { singular: "golygfa", plural: "golygfeydd" },
+  },
+  {
+    id: "sylfaen-words-uned-17-3",
+    english: { singular: "saucepan", plural: "saucepans" },
+    welsh: { singular: "sosban", plural: "sosbenni" },
+  },
+
+  {
+    id: "sylfaen-words-uned-17-4",
+    english: { singular: "beginner", plural: "beginners" },
+    welsh: { singular: "dechreuwr", plural: "dechreuwyr" },
+  },
+  {
+    id: "sylfaen-words-uned-17-5",
+    english: { singular: "size", plural: "sizes" },
+    welsh: { singular: "maint", plural: "meintiau" },
+  },
+  {
+    id: "sylfaen-words-uned-17-6",
+    english: { singular: "powder", plural: undefined },
+    welsh: { singular: "powdr", plural: undefined },
+  },
+  {
+    id: "sylfaen-words-uned-17-7",
+    english: { singular: "height", plural: undefined },
+    welsh: { singular: "taldra", plural: undefined },
+  },
+
+  {
+    id: "sylfaen-words-uned-17-8",
+    english: { singular: "to fancy", plural: undefined },
+    welsh: { singular: "ffansïo", plural: undefined },
+  },
+  {
+    id: "sylfaen-words-uned-17-9",
+    english: { singular: "to share", plural: undefined },
+    welsh: { singular: "rhannu", plural: undefined },
+  },
+
+  {
+    id: "sylfaen-words-uned-17-10",
+    english: { singular: "sensible", plural: undefined },
+    welsh: { singular: "call", plural: undefined },
+  },
+  {
+    id: "sylfaen-words-uned-17-11",
+    english: { singular: "plain", plural: undefined },
+    welsh: { singular: "plaen", plural: undefined },
+  },
+  {
+    id: "sylfaen-words-uned-17-12",
+    english: { singular: "organised", plural: undefined },
+    welsh: { singular: "trefnus", plural: undefined },
+  },
+
+  {
+    id: "sylfaen-words-uned-17-13",
+    english: { singular: "eventually", plural: undefined },
+    welsh: { singular: "yn y pen draw", plural: undefined },
+  },
+
+  {
+    id: "sylfaen-words-uned-17-14",
+    english: { singular: "leaf", plural: "leaves" },
+    welsh: { singular: "deilen", plural: "dail" },
+  },
+  {
+    id: "sylfaen-words-uned-17-15",
+    english: { singular: "stone", plural: "stones" },
+    welsh: { singular: "carreg", plural: "cerrig" },
+  },
+  {
+    id: "sylfaen-words-uned-17-16",
+    english: { singular: "this way", plural: undefined },
+    welsh: { singular: "y ffordd yma", plural: undefined },
+  },
+];
