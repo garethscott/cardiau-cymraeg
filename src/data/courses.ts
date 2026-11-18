@@ -162,8 +162,8 @@ export const courses: CourseStage[] = [
             slides: unedauSylfaenUned16,
           },
           {
-            id: "uned-16",
-            unitTitle: "Uned 16",
+            id: "uned-17",
+            unitTitle: "Uned 17",
             slides: unedauSylfaenUned17,
           },
         ],
